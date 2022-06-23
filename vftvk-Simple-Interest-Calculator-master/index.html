@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simple Intrest Calculator</h1>
+    <div class="maindiv">
+        Amount <input type="number" id="principal"> <br/> Rate <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <p>Value: <span id="demo"></span></p>
+
+        <br/> Years
+        <select id="years" name="No of Years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <!-- fill in the rest of the values -->
+        </select><br/>
+
+        <button onclick=" compute()">Compound Intrest</button>
+        <span id="result">
+            <!-- Below the compound intrest button create
+            an empty <span> and set its id to 'result' -->
+                <h3 id="si"></h3>
+        </span>
+
+        <footer>
+            &#169; This calculator belongs to Get Rich.
+        </footer>
+    </div>
+</body>
+
+</html>
