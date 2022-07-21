@@ -1,41 +1,56 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Intrest Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 
 <body>
-    <h1>Simple Intrest Calculator</h1>
-    <div class="maindiv">
-        Amount <input type="number" id="principal"> <br/> Rate <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        <p>Value: <span id="demo"></span></p>
+    <div class="container">
+        <h1>Simple Intrest calculator</h1>
+        <div class="input_section">
+            <div class="amount">
+                <label for="amount">Enter Total Amount :</label>
+                <input type="number" name="amount" id="amount">
+            </div>
 
-        <br/> Years
-        <select id="years" name="No of Years">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <!-- fill in the rest of the values -->
-        </select><br/>
-
-        <button onclick=" compute()">Compound Intrest</button>
-        <span id="result">
-            <!-- Below the compound intrest button create
-            an empty <span> and set its id to 'result' -->
-                <h3 id="si"></h3>
-        </span>
-
-        <footer>
-            &#169; This calculator belongs to Get Rich.
-        </footer>
+            <!-- <div class="time">
+                <label for="time">Enter Time:</label>
+                <input type="number" name="time" id="time">
+                
+            </div> -->
+            <div class="time">
+                <select id="time">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <!-- fill in the rest of the values -->
+            </select>
+            </div>
+            <div class="rate">
+                <label for="rate">Rate: </label>
+                <input type="number" name="rate" id="rate">
+            </div>
+            <div class="button">
+                <button onclick="Calculate()">Calculate</button>
+            </div>
+            <div class="result">
+                <h4 id="intrest"></h4>
+                <h4 id="year"></h4>
+            </div>
+        </div>
     </div>
 </body>
 
